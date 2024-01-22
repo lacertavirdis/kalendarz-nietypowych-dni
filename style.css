@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #003D5B;
+    color:white;
+    width:100%;
+    height: 100%;
+    animation: transition 10s infinite;
+}
+
+header{
+    background-color: #1B998B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+h1{
+    animation:gradient 5s infinite;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:70vw;
+    height:55vh;
+    background-color: #D1495B;
+    border-radius:15px;
+    margin-top:140px;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width:70vw;
+    height:25vh;
+    background-color: #D1495B;
+}
+
+input{
+    display: flex;
+    width:400px;
+    height:50px;
+    border-radius: 20px;
+    font-size: 130%;
+    border:#F9B9F2  2px solid;
+    padding-left:15px;
+}
+
+input:hover{
+    border-color: #1B998B;
+}
+
+button{
+    width:187px;
+    height:60px;
+    border-radius: 20px;
+    font-size: 130%;
+    color:white;
+    background-color: #4B8F8C;
+    border:#373F51 2px solid;
+}
+
+button:focus{
+    background-color: #FFC857;
+    border:#E9724C 2px solid;
+}
+
+p{
+    font-size: 180%;
+    font-weight: 500;
+    display:none;
+    background-color: #3c0b6e;
+    width:auto;
+    height:auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding:15px;
+}
+
+@keyframes transition{
+    0% {background-color: #003D5B;}
+    50%{background-color: #870058;}
+    100% {background-color: #003D5B;}
+}
+
+@keyframes gradient{
+    0%{color:white;}
+    20%{color:#8DA9C4;}
+    40%{color:#134074;}
+    60%{color:#13315C;}
+    80%{color:#0B2545;}
+    100%{color:white;}
+}
